@@ -21,7 +21,7 @@ Private Function searchStartPosition() As String
     col = 3
     r = 1
     With ActiveSheet
-        Do While InStr(.Cells(r, col).Value2, "14.5-") = 0
+        Do While InStr(.Cells(r, col).Value2, "14.") = 0
             r = r + 1
         Loop
     searchStartPosition = .Cells(r, col).Address
